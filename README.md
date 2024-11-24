@@ -1,3 +1,4 @@
+# React videos streaming app using React Player
 
 ![Project Screenshot](images/vs-app-img-1.png)
 ![Project Screenshot](images/vs-app-img-2.png)

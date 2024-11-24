@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,15 +19,55 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container {
+  display: flex; /* Flexbox layout for the two sides */
+  height: 100vh; /* Full height of the viewport */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ReactPlayer section */
+.player-container {
+  flex: 1; /* Takes up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364 );
+
+}
+
+/* List section */
+.list-container {
+  flex: 1; /* Takes up 50% of the width */
+  padding: 20px;
+  overflow-y: auto; /* Allows scrolling if the list is too long */
+  background: linear-gradient(to right, #E55D87, #5FC3E4);
+}
+
+/* List item styling */
+.list-container ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.list-container li {
+  padding: 10px 0;
+  padding-left: 10px;
+  border-bottom: 1px solid #ddd; /* Optional: Add a border between list items */
+}
+
+.list-container li:hover {
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.6), rgba(32, 58, 67, 0.6));
+  transform: scale(1.05); /* Slightly increase size */
+  color: #eceff1; /* Change text color */
+}
+
+.highlight {
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364 );
+  cursor: pointer; /* Optional: Show pointer cursor when hovering */
+  color: #eceff1; /* Change text color */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
